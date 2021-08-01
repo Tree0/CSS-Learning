@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>CSS Layout</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <h1>FlexBox Based Layout</h1>
+    </header>
+
+    <section class="container">
+      <div class="layout">
+        <h2>Flexbox-based layout</h2>
+        <p>The flexbox CSS property was first proposed in 2009, but didn’t get widespread browser adoption until around 2015. Flexbox was designed to define how space is distributed across a single column or row, which makes it a better candidate for defining layout compared to using floats. This meant that after about a decade of using float-based layouts, web developers were finally able to use CSS for layout without the need for the hacks needed with floats.</p>
+      </div>
+
+      <div class="result">
+        <h2>Result</h2>
+        <p>That is way, way more compact compared to the float-based layout approach! The flexbox properties and values are a bit confusing at first glance, but it eliminates the need for a lot of the hacks like negative margins that were necessary with float-based layouts — a huge win.</p>
+        <p>Much better! The columns are all equal height and take up the full height of the page. In some sense this seems perfect.</p>
+      </div>
+
+      <div class="downside">
+        <h2>Downsides</h2>
+        <p>One is browser support — currently every modern browser supports flexbox, but some older browsers never will. Fortunately browser vendors are making a bigger push to end support for these older browsers, making a more consistent development experience for web designers. Another downside is the fact that we needed to add the "container" to the markup — it would be nice to avoid it. In an ideal world, any CSS layout wouldn’t require changing the HTML markup at all.</p>
+        <p>The biggest downside though is the code in the CSS itself — flexbox eliminates a lot of the float hacks, but the code isn’t as expressive as it could be for defining layout. It’s hard to read the flexbox CSS and get a visual understanding how all of the elements will be laid out on the page. This leads to a lot of guessing and checking when writing flexbox-based layouts.</p>
+      </div>
+
+      <div class="note">
+        <h2>Note</h2>
+        <p>It’s important to note again that flexbox was designed to space elements within a single column or row — it was not designed for an entire page layout! Even though it does a serviceable job (much better than float-based layouts), a different specification was specifically developed to handle layouts with multiple rows and columns. This specification is known as CSS grid.</p>
+      </div>
+
+    </section>
+
+  </body>
+</html>

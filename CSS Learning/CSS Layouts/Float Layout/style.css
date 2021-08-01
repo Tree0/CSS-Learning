@@ -1,0 +1,46 @@
+body {
+  background-color: #CDE780;
+  font-family: century;
+  font-size: 18px;
+  margin: 0;
+}
+
+header {
+  background-color: #59594A;
+  padding: 1px;
+  text-align: center;
+  color: #FFF;
+  text-transform: uppercase;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.csslayout {
+  background: #eee;
+  float: left;
+  width: 40%;
+}
+
+.floatlayout {
+  background: #eee;
+  float: left;
+  width: 35%;
+  margin-left: 1%;
+
+}
+
+.conclusion {
+  background: #eee;
+  float: right;
+  width: 23%;
+}
+
+footer{
+  background-color: #7286A0;
+  clear:both;
+  text-align: center;
+  padding: 1px;
+}

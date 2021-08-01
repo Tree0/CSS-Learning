@@ -1,0 +1,45 @@
+body {
+  background-color: #CDE780;
+  font-family: century;
+  font-size: 18px;
+  margin: 0;
+}
+
+header {
+  background-color: #59594A;
+  padding: 1px;
+  text-align: center;
+  color: #FFF;
+  text-transform: uppercase;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  flex: 100%;
+  flex-wrap: wrap;
+}
+
+.layout {
+  flex: 20%;
+  padding:1em;
+  background: #C733FF;
+}
+
+.result {
+  flex: 20%;
+  padding:1em;
+  background: #E3FF33;
+}
+
+.downside {
+  flex: 20%;
+  padding:1em;
+  background: #33FCFF;
+}
+
+.note {
+  flex: 20%;
+  padding:1em;
+  background: #33FF9C;
+}

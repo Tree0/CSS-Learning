@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>CSS Layout</title>
+    <link rel="stylesheet" href="style.css">
+
+  </head>
+  <body>
+    <header>
+      <h1>Float Based Layout</h1>
+    </header>
+
+    <section class="container">
+      <div class="csslayout">
+        <h2>Using CSS for layout</h2>
+        <p>In the 1990s, before CSS gained wide adoption, there weren’t a lot of options to layout content on the page. HTML was originally designed as a language to create plain documents, not dynamic websites with sidebars, columns, etc. In those early days, layout was often done using HTML tables — the entire webpage would be within a table, which could be used to organize the content in rows and columns. This approach worked, but the downside was the tight coupling of content and presentation — if you wanted to change the layout of a site, it would require rewriting significant amounts of HTML.</p>
+        <p>Once CSS entered the scene, there was a strong push to keep content (written in the HTML) separate from presentation (written in the CSS). So people found ways to move all layout code out of HTML (no more tables) into CSS. It’s important to note that like HTML, CSS wasn’t really designed to layout content on a page either, so early attempts at this separation of concerns were difficult to achieve gracefully.</p>
+      </div>
+
+      <div class="floatlayout">
+        <h2>Float-based layout</h2>
+        <p>The CSS float property was originally introduced to float an image inside a column of text on the left or right (something you often see in newspapers). Web developers in the early 2000s took advantage of the fact that you could float not just images, but any element, meaning you could create the illusion of rows and columns by floating entire divs of content. But again, floats weren’t designed for this purpose, so creating this illusion was difficult to pull off in a consistent fashion.</p>
+        <p>In 2006, A List Apart published the popular article In Search of the Holy Grail, which outlined a detailed and thorough approach to creating what was known as the Holy Grail layout — a header, three columns and a footer. It’s pretty crazy to think that what sounds like a fairly straightforward layout would be referred to as the Holy Grail, but that was indeed how hard it was to create consistent layout at the time using pure CSS.</p>
+
+      </div>
+
+      <div class="conclusion">
+        <h2>Conclusion</h2>
+        <p>This is nice, but you can see from the colors that the three columns are not equal in height, and the page doesn’t fill the height of the screen. These issues are inherent with a float-based approach. All a float can do is place content to the left or right of a section — the CSS has no way to infer the heights of the content in the other sections. This problem had no straightforward solution until many years later, with a flexbox-based layout.</p>
+
+      </div>
+    </section>
+
+    <footer>
+      <h3>Inspired From Peter Jang Medium article (Modern CSS Explained For Dinosaurs)</h3>
+    </footer>
+
+
+
+  </body>
+</html>
