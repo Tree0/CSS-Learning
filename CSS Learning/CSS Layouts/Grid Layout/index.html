@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>CSS Layout</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <h1>Grid Based Layout</h1>
+    </header>
+
+      <div class="layout">
+        <h2>Grid-based layout</h2>
+        <p>CSS grid was first proposed in 2011 (not too long after the flexbox proposal), but took a long time to gain widespread adoption with browsers. As of early 2018, CSS grid is supported by most modern browsers (a huge improvement over even a year or two ago). Note that for this example, we can get rid of the div class="container" that we had to add for the flexbox-based layout — we can simply use the original HTML without modification. </p>
+      </div>
+
+      <div class="result">
+        <h2>Result</h2>
+        <p>The result is visually identical to the flexbox based layout. However, the CSS here is much improved in the sense that it clearly expresses the desired layout. The size and shape of the columns and rows are defined in the body selector, and each item in the grid is defined directly by its position.</p>
+        <p>One thing that can be confusing is the grid-column property, which defines the start point / end point of the column. It can be confusing because in this example, there are 3 columns, but the numbers range from 1 to 4.</p>
+      </div>
+
+      <div class="downside">
+        <h2>Downside</h2>
+        <p>Once you get used to the grid syntax, it clearly becomes the ideal way to express layout in CSS. The only real downside to a grid-based layout is browser support, which again has improved tremendously over the past year. It’s hard to overstate the importance of CSS grid as the first real tool in CSS that was actually designed for layout. In some sense, web designers have always had to be very conservative with making creative layouts, since the tools up until now have been fragile, using various hacks and workarounds. Now that CSS grid exists, there is the potential for a new wave of creative layout designs that never would have been possible before — exciting times!</p>
+      </div>
+
+      <footer>
+        <h3>Footer</h3>
+      </footer>
+
+  </body>
+</html>
